@@ -19,6 +19,12 @@ from datetime import datetime
 from typing import Dict, List, Optional, Set, Tuple
 from zoneinfo import ZoneInfo
 
+# --- KAMI TRIVIA imports ---
+import re
+from dataclasses import dataclass, field
+from typing import Dict, Set
+
+# --- Disc Imports ---
 import discord
 from discord import app_commands
 from discord.ext import commands, tasks
@@ -130,6 +136,214 @@ class PersistentTriviaView(discord.ui.View):
     async def btn_d(self, i: discord.Interaction, b: discord.ui.Button):
         await self.cog._trivia_button(i, 3)
 
+
+# ====== KAMI TRIVIA (drop-in) ======
+
+@dataclass
+class _KamiTriviaSession:
+    channel_id: int
+    question: str
+    answers: Set[str]          # normalized acceptable answers
+    winners_needed: int = 3
+    winners: Set[int] = field(default_factory=set)
+    active: bool = True
+
+def _kami_norm(s: str) -> str:
+    s = s.strip().lower()
+    s = re.sub(r"[`~!@#$%^&*()\-_=+$begin:math:display$$end:math:display${}\\|;:'\",.<>/?]", "", s)
+    s = re.sub(r"\s+", " ", s)
+    return s
+
+def _kami_plural(n: int) -> str:
+    return "left" if n != 1 else "left"
+
+def _kami_flair(left: int) -> str:
+    if left > 1:
+        return "🌸"
+    if left == 1:
+        return "🔮"
+    return "🏁"
+
+# storage: channel_id -> session
+self_trivia_sessions: Dict[int, _KamiTriviaSession] = None  # set in __init__
+
+# ====== KAMI TRIVIA (drop-in with timeout + end announcement) ======
+
+@dataclass
+class _KamiTriviaSession:
+    channel_id: int
+    question: str
+    answers: Set[str]                 # normalized acceptable answers
+    winners_needed: int = 3
+    winners: Set[int] = field(default_factory=set)
+    active: bool = True
+    timer_task: Optional[asyncio.Task] = None
+
+def _kt_norm(s: str) -> str:
+    s = s.strip().lower()
+    s = re.sub(r"[`~!@#$%^&*()\-_=+$begin:math:display$$end:math:display${}\\|;:'\",.<>/?]", "", s)
+    s = re.sub(r"\s+", " ", s)
+    return s
+
+def _kt_flair(left: int) -> str:
+    if left > 1:
+        return "🌸"
+    if left == 1:
+        return "🔮"
+    return "🏁"
+
+async def _kt_finish(self, channel: discord.TextChannel, sess: _KamiTriviaSession, reason: str):
+    """End a round (time/winners). Announce partial winners if any."""
+    if not sess.active:
+        return
+    sess.active = False
+    # stop timer if still running
+    if sess.timer_task and not sess.timer_task.done():
+        sess.timer_task.cancel()
+    left = max(0, sess.winners_needed - len(sess.winners))
+    winners_order = ", ".join(f"<@{uid}>" for uid in sess.winners) or "—"
+    if left > 0:
+        await channel.send(
+            f"⏳ **Kami Verdict:** Time’s up — only **{len(sess.winners)}** seeker(s) solved it.\n"
+            f"Winners so far: {winners_order}\n"
+            f"Unclaimed spots: **{left}**\n"
+            f"Type `!trivia start ...` for the next challenge!"
+        )
+    else:
+        await channel.send(
+            f"🏆 **Kami Verdict:** Round complete! Winners: {winners_order}\n"
+            f"Type `!trivia start ...` for another."
+        )
+
+@commands.group(name="trivia", invoke_without_command=True)
+async def trivia(self, ctx: commands.Context):
+    """Kami Trivia:
+    `!trivia start [winners] [seconds] | <question> | <ans1; ans2; ...>`
+    e.g. `!trivia start 3 45 | Capital of Japan? | Tokyo`
+    """
+    await ctx.send(
+        "🧠 **Kami Trivia**\n"
+        "Start: `!trivia start [winners] [seconds] | <question> | <answer1; answer2; ...>`\n"
+        "Stop:  `!trivia stop`\n"
+        "Status:`!trivia status`"
+    )
+
+@trivia.command(name="start")
+@commands.has_permissions(manage_messages=True)
+async def trivia_start(self, ctx: commands.Context, *, spec: str):
+    """
+    Format:
+      !trivia start [winners] [seconds] | <question> | <ans1; ans2; ...>
+    winners default=3, seconds default=45
+    """
+    # init storage if not yet
+    if self.self_trivia_sessions is None:
+        self.self_trivia_sessions = {}
+
+    parts = [p.strip() for p in spec.split("|")]
+    if len(parts) != 3:
+        return await ctx.reply(
+            "❌ Use: `!trivia start [winners] [seconds] | <question> | <ans1; ans2; ...>`"
+        )
+
+    # Parse left side (may contain winners + seconds OR just one/both omitted)
+    left_side = parts[0].split()
+    winners_needed = 3
+    seconds = 45
+    if len(left_side) >= 1 and left_side[0].isdigit():
+        winners_needed = int(left_side[0])
+    if len(left_side) >= 2 and left_side[1].isdigit():
+        seconds = int(left_side[1])
+
+    question = parts[1]
+    answers = {_kt_norm(a) for a in parts[2].split(";") if a.strip()}
+    if not question or not answers:
+        return await ctx.reply("❌ Need a question and at least one answer.")
+
+    if (sess := self.self_trivia_sessions.get(ctx.channel.id)) and sess.active:
+        return await ctx.reply("⚠️ A trivia round is already running here. Use `!trivia stop`.")
+
+    sess = _KamiTriviaSession(
+        channel_id=ctx.channel.id,
+        question=question,
+        answers=answers,
+        winners_needed=max(1, winners_needed),
+    )
+    self.self_trivia_sessions[ctx.channel.id] = sess
+
+    await ctx.send(
+        f"🌸 **Kami Trivia Begins!**\n"
+        f"**Question:** {question}\n"
+        f"First **{sess.winners_needed}** correct answers win.\n"
+        f"⏱️ Time limit: **{seconds}s** — type your answer now!"
+    )
+
+    # start timer
+    async def timer():
+        try:
+            await asyncio.sleep(max(5, seconds))
+            ch = ctx.channel
+            if isinstance(ch, discord.TextChannel):
+                await _kt_finish(self, ch, sess, reason="time")
+        except asyncio.CancelledError:
+            pass  # normal when round ends early
+
+    sess.timer_task = asyncio.create_task(timer())
+
+@trivia.command(name="status")
+async def trivia_status(self, ctx: commands.Context):
+    if self.self_trivia_sessions is None:
+        self.self_trivia_sessions = {}
+    sess = self.self_trivia_sessions.get(ctx.channel.id)
+    if not sess or not sess.active:
+        return await ctx.reply("No active trivia in this channel.")
+    left = max(0, sess.winners_needed - len(sess.winners))
+    winners_list = ", ".join(f"<@{uid}>" for uid in sess.winners) or "—"
+    await ctx.send(
+        f"🔎 **Status** — `{left}` left to win\n"
+        f"Question: {sess.question}\n"
+        f"Winners so far: {winners_list}"
+    )
+
+@trivia.command(name="stop")
+@commands.has_permissions(manage_messages=True)
+async def trivia_stop(self, ctx: commands.Context):
+    if self.self_trivia_sessions is None:
+        self.self_trivia_sessions = {}
+    sess = self.self_trivia_sessions.get(ctx.channel.id)
+    if not sess or not sess.active:
+        return await ctx.reply("No active trivia here.")
+    await _kt_finish(self, ctx.channel, sess, reason="stopped")
+
+@commands.Cog.listener("on_message")
+async def _kami_trivia_on_message(self, message: discord.Message):
+    if message.author.bot or not message.guild:
+        return
+    if self.self_trivia_sessions is None:
+        return
+    sess = self.self_trivia_sessions.get(message.channel.id)
+    if not sess or not sess.active:
+        return
+
+    guess = _kt_norm(message.content)
+    if not guess:
+        return
+    if message.author.id in sess.winners:
+        return
+
+    if guess in sess.answers:
+        sess.winners.add(message.author.id)
+        left = max(0, sess.winners_needed - len(sess.winners))
+        await message.channel.send(
+            f"{_kt_flair(left)} **{message.author.display_name}** answered correctly! "
+            f"**{left}** left…"
+        )
+        if left == 0:
+            # all winners found — finish early
+            ch = message.channel
+            if isinstance(ch, discord.TextChannel):
+                await _kt_finish(self, ch, sess, reason="completed")
+# ====== end KAMI TRIVIA ======
 
 # ====================== WYR ======================
 @dataclass
@@ -330,6 +544,7 @@ class KamiFunPack(commands.Cog, name="Kami Fun Pack"):
         self.bot = bot
         self._synced = False  # global slash sync guard
         self.store = _load_store()
+        self.self_trivia_sessions = {}
 
         # bootstrap defaults
         self.store.setdefault("trivia_bank", [asdict(q) for q in DEFAULT_TRIVIA])

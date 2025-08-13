@@ -57,19 +57,16 @@
   "trivia_hours": {},
   "trivia_today": {
     "636607166911873028": {
-      "date": "2025-08-12",
-      "hours_posted": [
-        10,
-        14,
-        21
-      ]
+      "date": "2025-08-13",
+      "hours_posted": []
     }
   },
   "trivia_scores": {
     "636607166911873028": {
       "week_id": "2025-W33",
       "users": {
-        "452226391224877057": 250
+        "452226391224877057": 750,
+        "157673650189762560": 250
       }
     }
   },
@@ -97,10 +94,8 @@
   "wyr_hours": {},
   "wyr_today": {
     "636607166911873028": {
-      "date": "2025-08-12",
-      "hours_posted": [
-        12
-      ]
+      "date": "2025-08-13",
+      "hours_posted": []
     }
   },
   "active_trivia": {
@@ -135,12 +130,57 @@
         "Host Transfer Type Protocol"
       ],
       "correct": 0,
-      "winners": [],
+      "winners": [
+        157673650189762560
+      ],
       "answered": [
-        452226391224877057
+        465371570404327424,
+        452226391224877057,
+        366745588873560069,
+        157673650189762560
       ],
       "created_ts": 1755050440,
       "auto": true
+    },
+    "1405055362415198289": {
+      "guild_id": 636607166911873028,
+      "channel_id": 1403719962820083712,
+      "q": "What does HTTP stand for?",
+      "choices": [
+        "HyperText Transfer Protocol",
+        "High Transfer Text Protocol",
+        "HyperText Transit Pipeline",
+        "Host Transfer Type Protocol"
+      ],
+      "correct": 0,
+      "winners": [
+        452226391224877057
+      ],
+      "answered": [
+        452226391224877057
+      ],
+      "created_ts": 1755061703,
+      "auto": false
+    },
+    "1405056778726543410": {
+      "guild_id": 636607166911873028,
+      "channel_id": 1403719962820083712,
+      "q": "What does HTTP stand for?",
+      "choices": [
+        "HyperText Transfer Protocol",
+        "High Transfer Text Protocol",
+        "HyperText Transit Pipeline",
+        "Host Transfer Type Protocol"
+      ],
+      "correct": 0,
+      "winners": [
+        452226391224877057
+      ],
+      "answered": [
+        452226391224877057
+      ],
+      "created_ts": 1755062040,
+      "auto": false
     }
   }
 }
