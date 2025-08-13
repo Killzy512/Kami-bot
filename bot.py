@@ -21,31 +21,55 @@ from cogs.bank import (
     get_last_daily, set_last_daily,
 )
 
-# --- TOKEN LOADING (minimal & robust) ---
-import os
+# --- BEGIN: minimal, reliable env config ---
 from pathlib import Path
+import os
+import logging
 
-# If you use dotenv, this will load .env that sits next to bot.py
+# Try to load .env that sits NEXT TO bot.py (works even if you run from another folder)
 try:
     from dotenv import load_dotenv  # pip install python-dotenv
     ENV_PATH = Path(__file__).with_name(".env")
-    # override=True ensures the .env wins if something else is set
-    load_dotenv(dotenv_path=ENV_PATH, override=True)
+    load_dotenv(ENV_PATH, override=True)
 except Exception:
-    # dotenv is optional; if not installed, you can set env via PowerShell instead
+    ENV_PATH = Path(__file__).with_name(".env")
+    # dotenv is optional; you can rely on OS env vars if preferred
     pass
 
-TOKEN = os.getenv("DISCORD_TOKEN")
-if not TOKEN:
-    raise RuntimeError(
-        "DISCORD_TOKEN is not set. "
-        "Create a .env next to bot.py (DISCORD_TOKEN=...) or set the environment variable."
-    )
-# ----------------------------------------
-HOST = "127.0.0.1"
-PORT = 2333
-PASSWORD = "youshallnotpass"
+# Read token from env
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+if not DISCORD_TOKEN:
+    raise RuntimeError(f"DISCORD_TOKEN is not set. Put it in {ENV_PATH} or in your environment.")
 
+# Back-compat alias so the rest of your code can keep using TOKEN
+TOKEN = DISCORD_TOKEN
+
+# OPTIONAL: quick sanity print (masked). Comment out after confirming.
+print(f"[auth] loaded token prefix: {TOKEN[:8]}… (len={len(TOKEN)}) from {ENV_PATH if ENV_PATH.exists() else 'ENV'}")
+# --- END: minimal, reliable env config ---
+# Lavalink (Wavelink) — keep your existing variable names to avoid code changes later
+LAVALINK_HOST: Final[str] = os.getenv("LAVALINK_HOST", "127.0.0.1")
+LAVALINK_PORT: Final[int] = int(os.getenv("LAVALINK_PORT", "2333"))
+LAVALINK_PASSWORD: Final[str] = os.getenv("LAVALINK_PASSWORD", "youshallnotpass")
+
+# Backwards-compat aliases if the rest of your code refers to HOST/PORT/PASSWORD
+HOST: Final[str] = LAVALINK_HOST
+PORT: Final[int] = LAVALINK_PORT
+PASSWORD: Final[str] = LAVALINK_PASSWORD
+
+# Data paths used by various cogs (override in .env if you like)
+BANK_DATA_PATH: Final[str] = os.getenv("BANK_DATA_PATH", "data/bank.json")
+XP_DATA_PATH: Final[str] = os.getenv("XP_DATA_PATH", "data/xp.json")
+FUNPACK_DATA_PATH: Final[str] = os.getenv("FUNPACK_DATA_PATH", "funpack_data.json")
+KAMI_ADVENTURE_PATH: Final[str] = os.getenv("KAMI_ADVENTURE_PATH", "data/kami")
+
+# Logging level
+LOG_LEVEL: Final[str] = os.getenv("LOG_LEVEL", "INFO")
+logging.basicConfig(
+    level=getattr(logging, LOG_LEVEL.upper(), logging.INFO),
+    format="%(asctime)s %(levelname)s %(name)s: %(message)s",
+)
+# --- END: env-driven config ---
 COMMAND_PREFIX = "!"
 MAX_QUEUE_SIZE = 100
 
