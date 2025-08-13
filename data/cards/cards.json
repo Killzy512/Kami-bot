@@ -1,0 +1,28 @@
+{
+  "636607166911873028": {
+    "452226391224877057": [
+      {
+        "name": "Chibi Chopper",
+        "element": "Earth",
+        "rarity": "common",
+        "atk": 163,
+        "def": 111
+      },
+      {
+        "name": "Chibi Hinata",
+        "element": "Spirit",
+        "rarity": "common",
+        "atk": 107,
+        "def": 183
+      },
+      {
+        "name": "Chibi Hinata",
+        "element": "Spirit",
+        "rarity": "common",
+        "atk": 127,
+        "def": 139
+      }
+    ]
+  },
+  "guilds": {}
+}

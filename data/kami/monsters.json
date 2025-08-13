@@ -1,0 +1,1502 @@
+[
+  {
+    "name": "Silver Banshee",
+    "hp": 65,
+    "atk": 10,
+    "def": 1,
+    "crit": 8,
+    "coin_drop": [
+      13,
+      21
+    ],
+    "rpg_xp": 18
+  },
+  {
+    "name": "Shattered Storm Roc",
+    "hp": 60,
+    "atk": 11,
+    "def": 2,
+    "crit": 7,
+    "coin_drop": [
+      19,
+      35
+    ],
+    "rpg_xp": 24
+  },
+  {
+    "name": "Mire Moon Hare",
+    "hp": 97,
+    "atk": 11,
+    "def": 1,
+    "crit": 6,
+    "coin_drop": [
+      25,
+      37
+    ],
+    "rpg_xp": 20
+  },
+  {
+    "name": "Solar Carp Spirit",
+    "hp": 85,
+    "atk": 12,
+    "def": 4,
+    "crit": 5,
+    "coin_drop": [
+      15,
+      26
+    ],
+    "rpg_xp": 25
+  },
+  {
+    "name": "Mire Prowler",
+    "hp": 90,
+    "atk": 12,
+    "def": 3,
+    "crit": 6,
+    "coin_drop": [
+      21,
+      34
+    ],
+    "rpg_xp": 27
+  },
+  {
+    "name": "Star Moon Hare",
+    "hp": 65,
+    "atk": 12,
+    "def": 1,
+    "crit": 8,
+    "coin_drop": [
+      24,
+      38
+    ],
+    "rpg_xp": 28
+  },
+  {
+    "name": "Sky Wisp",
+    "hp": 81,
+    "atk": 6,
+    "def": 2,
+    "crit": 8,
+    "coin_drop": [
+      27,
+      40
+    ],
+    "rpg_xp": 26
+  },
+  {
+    "name": "Sable Kappa",
+    "hp": 75,
+    "atk": 9,
+    "def": 4,
+    "crit": 6,
+    "coin_drop": [
+      26,
+      35
+    ],
+    "rpg_xp": 18
+  },
+  {
+    "name": "Ivory Blight Colossus",
+    "hp": 84,
+    "atk": 7,
+    "def": 2,
+    "crit": 8,
+    "coin_drop": [
+      28,
+      37
+    ],
+    "rpg_xp": 27
+  },
+  {
+    "name": "Blighted Tanuki",
+    "hp": 74,
+    "atk": 7,
+    "def": 1,
+    "crit": 5,
+    "coin_drop": [
+      25,
+      38
+    ],
+    "rpg_xp": 27
+  },
+  {
+    "name": "Dawn Tanuki",
+    "hp": 55,
+    "atk": 6,
+    "def": 3,
+    "crit": 5,
+    "coin_drop": [
+      13,
+      26
+    ],
+    "rpg_xp": 20
+  },
+  {
+    "name": "Mist Cinder Imp",
+    "hp": 80,
+    "atk": 9,
+    "def": 4,
+    "crit": 5,
+    "coin_drop": [
+      28,
+      37
+    ],
+    "rpg_xp": 27
+  },
+  {
+    "name": "Obsidian Mire Hydra",
+    "hp": 97,
+    "atk": 9,
+    "def": 3,
+    "crit": 6,
+    "coin_drop": [
+      26,
+      34
+    ],
+    "rpg_xp": 18
+  },
+  {
+    "name": "Feral Thunder Yak",
+    "hp": 56,
+    "atk": 8,
+    "def": 3,
+    "crit": 6,
+    "coin_drop": [
+      21,
+      34
+    ],
+    "rpg_xp": 21
+  },
+  {
+    "name": "Lunar Astral Stag",
+    "hp": 65,
+    "atk": 7,
+    "def": 3,
+    "crit": 7,
+    "coin_drop": [
+      25,
+      40
+    ],
+    "rpg_xp": 24
+  },
+  {
+    "name": "Mist Thunder Yak",
+    "hp": 82,
+    "atk": 7,
+    "def": 1,
+    "crit": 5,
+    "coin_drop": [
+      14,
+      30
+    ],
+    "rpg_xp": 19
+  },
+  {
+    "name": "Thunder Lotus Specter",
+    "hp": 85,
+    "atk": 10,
+    "def": 2,
+    "crit": 8,
+    "coin_drop": [
+      23,
+      36
+    ],
+    "rpg_xp": 28
+  },
+  {
+    "name": "Elder Carp Spirit",
+    "hp": 82,
+    "atk": 9,
+    "def": 3,
+    "crit": 8,
+    "coin_drop": [
+      17,
+      32
+    ],
+    "rpg_xp": 23
+  },
+  {
+    "name": "Gale Banshee",
+    "hp": 60,
+    "atk": 12,
+    "def": 4,
+    "crit": 7,
+    "coin_drop": [
+      21,
+      37
+    ],
+    "rpg_xp": 19
+  },
+  {
+    "name": "Wild Boar",
+    "hp": 100,
+    "atk": 9,
+    "def": 1,
+    "crit": 5,
+    "coin_drop": [
+      26,
+      41
+    ],
+    "rpg_xp": 18
+  },
+  {
+    "name": "Wild Blight Colossus",
+    "hp": 88,
+    "atk": 11,
+    "def": 4,
+    "crit": 7,
+    "coin_drop": [
+      18,
+      33
+    ],
+    "rpg_xp": 30
+  },
+  {
+    "name": "Windswept Basilisk",
+    "hp": 66,
+    "atk": 9,
+    "def": 3,
+    "crit": 6,
+    "coin_drop": [
+      21,
+      34
+    ],
+    "rpg_xp": 26
+  },
+  {
+    "name": "Crimson Prowler",
+    "hp": 50,
+    "atk": 7,
+    "def": 4,
+    "crit": 8,
+    "coin_drop": [
+      26,
+      36
+    ],
+    "rpg_xp": 28
+  },
+  {
+    "name": "Thunder Moth Queen",
+    "hp": 61,
+    "atk": 8,
+    "def": 4,
+    "crit": 8,
+    "coin_drop": [
+      12,
+      23
+    ],
+    "rpg_xp": 20
+  },
+  {
+    "name": "Gravel Bandit",
+    "hp": 98,
+    "atk": 10,
+    "def": 3,
+    "crit": 8,
+    "coin_drop": [
+      24,
+      34
+    ],
+    "rpg_xp": 19
+  },
+  {
+    "name": "Salt Basilisk",
+    "hp": 94,
+    "atk": 10,
+    "def": 1,
+    "crit": 8,
+    "coin_drop": [
+      19,
+      30
+    ],
+    "rpg_xp": 21
+  },
+  {
+    "name": "Quartz Aether Wyvern",
+    "hp": 77,
+    "atk": 6,
+    "def": 2,
+    "crit": 5,
+    "coin_drop": [
+      20,
+      33
+    ],
+    "rpg_xp": 19
+  },
+  {
+    "name": "Stone River Siren",
+    "hp": 67,
+    "atk": 8,
+    "def": 4,
+    "crit": 6,
+    "coin_drop": [
+      17,
+      31
+    ],
+    "rpg_xp": 18
+  },
+  {
+    "name": "Shattered Sky Leviathan",
+    "hp": 61,
+    "atk": 7,
+    "def": 1,
+    "crit": 7,
+    "coin_drop": [
+      20,
+      33
+    ],
+    "rpg_xp": 23
+  },
+  {
+    "name": "Shattered Tengu Duelist",
+    "hp": 81,
+    "atk": 8,
+    "def": 2,
+    "crit": 7,
+    "coin_drop": [
+      26,
+      42
+    ],
+    "rpg_xp": 23
+  },
+  {
+    "name": "Gale Fox Spirit",
+    "hp": 78,
+    "atk": 12,
+    "def": 1,
+    "crit": 6,
+    "coin_drop": [
+      28,
+      42
+    ],
+    "rpg_xp": 18
+  },
+  {
+    "name": "Star Thunder Yak",
+    "hp": 64,
+    "atk": 7,
+    "def": 1,
+    "crit": 8,
+    "coin_drop": [
+      18,
+      32
+    ],
+    "rpg_xp": 26
+  },
+  {
+    "name": "Ashen Astral Stag",
+    "hp": 50,
+    "atk": 7,
+    "def": 1,
+    "crit": 6,
+    "coin_drop": [
+      28,
+      38
+    ],
+    "rpg_xp": 29
+  },
+  {
+    "name": "Mist Basilisk",
+    "hp": 87,
+    "atk": 12,
+    "def": 1,
+    "crit": 8,
+    "coin_drop": [
+      21,
+      32
+    ],
+    "rpg_xp": 24
+  },
+  {
+    "name": "Silver Prowler",
+    "hp": 85,
+    "atk": 12,
+    "def": 1,
+    "crit": 8,
+    "coin_drop": [
+      16,
+      31
+    ],
+    "rpg_xp": 27
+  },
+  {
+    "name": "Blighted Grove Titan",
+    "hp": 78,
+    "atk": 9,
+    "def": 4,
+    "crit": 8,
+    "coin_drop": [
+      14,
+      29
+    ],
+    "rpg_xp": 18
+  },
+  {
+    "name": "Star Tengu Duelist",
+    "hp": 53,
+    "atk": 12,
+    "def": 1,
+    "crit": 5,
+    "coin_drop": [
+      18,
+      26
+    ],
+    "rpg_xp": 18
+  },
+  {
+    "name": "Golden Blight Colossus",
+    "hp": 96,
+    "atk": 9,
+    "def": 1,
+    "crit": 7,
+    "coin_drop": [
+      14,
+      24
+    ],
+    "rpg_xp": 27
+  },
+  {
+    "name": "Wild Moon Hare",
+    "hp": 61,
+    "atk": 10,
+    "def": 4,
+    "crit": 7,
+    "coin_drop": [
+      21,
+      30
+    ],
+    "rpg_xp": 27
+  },
+  {
+    "name": "Frost Banshee",
+    "hp": 59,
+    "atk": 12,
+    "def": 3,
+    "crit": 5,
+    "coin_drop": [
+      13,
+      21
+    ],
+    "rpg_xp": 24
+  },
+  {
+    "name": "Night Slime",
+    "hp": 100,
+    "atk": 17,
+    "def": 8,
+    "crit": 10,
+    "coin_drop": [
+      59,
+      92
+    ],
+    "rpg_xp": 46
+  },
+  {
+    "name": "Thunder Astral Stag",
+    "hp": 153,
+    "atk": 14,
+    "def": 6,
+    "crit": 8,
+    "coin_drop": [
+      37,
+      61
+    ],
+    "rpg_xp": 42
+  },
+  {
+    "name": "Dawn Crystal Crab",
+    "hp": 140,
+    "atk": 13,
+    "def": 5,
+    "crit": 9,
+    "coin_drop": [
+      43,
+      68
+    ],
+    "rpg_xp": 47
+  },
+  {
+    "name": "Elder Oni Bruiser",
+    "hp": 166,
+    "atk": 14,
+    "def": 6,
+    "crit": 8,
+    "coin_drop": [
+      40,
+      58
+    ],
+    "rpg_xp": 72
+  },
+  {
+    "name": "Gravel Lotus Specter",
+    "hp": 119,
+    "atk": 18,
+    "def": 7,
+    "crit": 9,
+    "coin_drop": [
+      57,
+      74
+    ],
+    "rpg_xp": 40
+  },
+  {
+    "name": "Thunder Moth Queen",
+    "hp": 201,
+    "atk": 20,
+    "def": 4,
+    "crit": 10,
+    "coin_drop": [
+      52,
+      68
+    ],
+    "rpg_xp": 63
+  },
+  {
+    "name": "Silver Kappa",
+    "hp": 180,
+    "atk": 19,
+    "def": 4,
+    "crit": 6,
+    "coin_drop": [
+      33,
+      66
+    ],
+    "rpg_xp": 41
+  },
+  {
+    "name": "Blighted Raiju",
+    "hp": 109,
+    "atk": 19,
+    "def": 7,
+    "crit": 9,
+    "coin_drop": [
+      60,
+      90
+    ],
+    "rpg_xp": 58
+  },
+  {
+    "name": "Sable Samurai Shade",
+    "hp": 109,
+    "atk": 14,
+    "def": 7,
+    "crit": 8,
+    "coin_drop": [
+      47,
+      74
+    ],
+    "rpg_xp": 72
+  },
+  {
+    "name": "Sky Moth Queen",
+    "hp": 121,
+    "atk": 18,
+    "def": 6,
+    "crit": 10,
+    "coin_drop": [
+      40,
+      67
+    ],
+    "rpg_xp": 66
+  },
+  {
+    "name": "Sable Shrine Guardian",
+    "hp": 149,
+    "atk": 16,
+    "def": 7,
+    "crit": 8,
+    "coin_drop": [
+      67,
+      75
+    ],
+    "rpg_xp": 73
+  },
+  {
+    "name": "Solar Blight Colossus",
+    "hp": 187,
+    "atk": 13,
+    "def": 8,
+    "crit": 7,
+    "coin_drop": [
+      40,
+      63
+    ],
+    "rpg_xp": 62
+  },
+  {
+    "name": "Blighted Fang Spider",
+    "hp": 163,
+    "atk": 22,
+    "def": 4,
+    "crit": 10,
+    "coin_drop": [
+      66,
+      85
+    ],
+    "rpg_xp": 43
+  },
+  {
+    "name": "Void Fox Spirit",
+    "hp": 121,
+    "atk": 22,
+    "def": 7,
+    "crit": 9,
+    "coin_drop": [
+      53,
+      70
+    ],
+    "rpg_xp": 60
+  },
+  {
+    "name": "Thorn Rootcaller",
+    "hp": 192,
+    "atk": 19,
+    "def": 5,
+    "crit": 7,
+    "coin_drop": [
+      35,
+      64
+    ],
+    "rpg_xp": 64
+  },
+  {
+    "name": "Lunar Lotus Specter",
+    "hp": 179,
+    "atk": 18,
+    "def": 8,
+    "crit": 8,
+    "coin_drop": [
+      35,
+      69
+    ],
+    "rpg_xp": 64
+  },
+  {
+    "name": "Duskwalker Grove Titan",
+    "hp": 189,
+    "atk": 20,
+    "def": 6,
+    "crit": 9,
+    "coin_drop": [
+      48,
+      74
+    ],
+    "rpg_xp": 48
+  },
+  {
+    "name": "Salt Mire Stalker",
+    "hp": 156,
+    "atk": 21,
+    "def": 4,
+    "crit": 8,
+    "coin_drop": [
+      58,
+      92
+    ],
+    "rpg_xp": 60
+  },
+  {
+    "name": "Umbral Mire Hydra",
+    "hp": 169,
+    "atk": 19,
+    "def": 4,
+    "crit": 7,
+    "coin_drop": [
+      51,
+      86
+    ],
+    "rpg_xp": 50
+  },
+  {
+    "name": "Storm Storm Roc",
+    "hp": 124,
+    "atk": 17,
+    "def": 6,
+    "crit": 9,
+    "coin_drop": [
+      63,
+      98
+    ],
+    "rpg_xp": 73
+  },
+  {
+    "name": "Shade Mire Hydra",
+    "hp": 177,
+    "atk": 19,
+    "def": 8,
+    "crit": 9,
+    "coin_drop": [
+      49,
+      82
+    ],
+    "rpg_xp": 61
+  },
+  {
+    "name": "Gravel Shrine Guardian",
+    "hp": 178,
+    "atk": 15,
+    "def": 5,
+    "crit": 10,
+    "coin_drop": [
+      31,
+      65
+    ],
+    "rpg_xp": 60
+  },
+  {
+    "name": "Whisper Wolf",
+    "hp": 133,
+    "atk": 18,
+    "def": 6,
+    "crit": 9,
+    "coin_drop": [
+      32,
+      67
+    ],
+    "rpg_xp": 55
+  },
+  {
+    "name": "Howling Fang Spider",
+    "hp": 162,
+    "atk": 14,
+    "def": 4,
+    "crit": 7,
+    "coin_drop": [
+      48,
+      72
+    ],
+    "rpg_xp": 42
+  },
+  {
+    "name": "Star Tanuki",
+    "hp": 132,
+    "atk": 16,
+    "def": 6,
+    "crit": 10,
+    "coin_drop": [
+      62,
+      94
+    ],
+    "rpg_xp": 47
+  },
+  {
+    "name": "Gravel Cinder Imp",
+    "hp": 125,
+    "atk": 20,
+    "def": 4,
+    "crit": 9,
+    "coin_drop": [
+      52,
+      92
+    ],
+    "rpg_xp": 57
+  },
+  {
+    "name": "Clockwork Mire Hydra",
+    "hp": 208,
+    "atk": 19,
+    "def": 6,
+    "crit": 10,
+    "coin_drop": [
+      41,
+      62
+    ],
+    "rpg_xp": 52
+  },
+  {
+    "name": "Solar Oni Bruiser",
+    "hp": 112,
+    "atk": 16,
+    "def": 5,
+    "crit": 6,
+    "coin_drop": [
+      37,
+      60
+    ],
+    "rpg_xp": 45
+  },
+  {
+    "name": "Windswept Golem",
+    "hp": 209,
+    "atk": 19,
+    "def": 4,
+    "crit": 9,
+    "coin_drop": [
+      63,
+      76
+    ],
+    "rpg_xp": 45
+  },
+  {
+    "name": "Void Shrine Guardian",
+    "hp": 128,
+    "atk": 15,
+    "def": 7,
+    "crit": 10,
+    "coin_drop": [
+      33,
+      65
+    ],
+    "rpg_xp": 51
+  },
+  {
+    "name": "Salt Fang Spider",
+    "hp": 163,
+    "atk": 15,
+    "def": 5,
+    "crit": 6,
+    "coin_drop": [
+      31,
+      56
+    ],
+    "rpg_xp": 55
+  },
+  {
+    "name": "Golden Lotus Specter",
+    "hp": 194,
+    "atk": 16,
+    "def": 7,
+    "crit": 10,
+    "coin_drop": [
+      55,
+      74
+    ],
+    "rpg_xp": 60
+  },
+  {
+    "name": "Blighted Oni Bruiser",
+    "hp": 158,
+    "atk": 17,
+    "def": 7,
+    "crit": 8,
+    "coin_drop": [
+      45,
+      70
+    ],
+    "rpg_xp": 56
+  },
+  {
+    "name": "Rift Mire Hydra",
+    "hp": 144,
+    "atk": 12,
+    "def": 8,
+    "crit": 9,
+    "coin_drop": [
+      44,
+      76
+    ],
+    "rpg_xp": 69
+  },
+  {
+    "name": "Crimson Boar",
+    "hp": 182,
+    "atk": 19,
+    "def": 8,
+    "crit": 6,
+    "coin_drop": [
+      64,
+      99
+    ],
+    "rpg_xp": 40
+  },
+  {
+    "name": "Star Storm Roc",
+    "hp": 155,
+    "atk": 14,
+    "def": 6,
+    "crit": 10,
+    "coin_drop": [
+      44,
+      54
+    ],
+    "rpg_xp": 55
+  },
+  {
+    "name": "Star Carp Spirit",
+    "hp": 104,
+    "atk": 19,
+    "def": 8,
+    "crit": 8,
+    "coin_drop": [
+      35,
+      66
+    ],
+    "rpg_xp": 75
+  },
+  {
+    "name": "Umbral Wisp",
+    "hp": 175,
+    "atk": 20,
+    "def": 4,
+    "crit": 10,
+    "coin_drop": [
+      65,
+      78
+    ],
+    "rpg_xp": 50
+  },
+  {
+    "name": "Quartz Mire Hydra",
+    "hp": 146,
+    "atk": 16,
+    "def": 6,
+    "crit": 8,
+    "coin_drop": [
+      48,
+      67
+    ],
+    "rpg_xp": 53
+  },
+  {
+    "name": "Rift Mech Oni",
+    "hp": 173,
+    "atk": 21,
+    "def": 5,
+    "crit": 6,
+    "coin_drop": [
+      39,
+      51
+    ],
+    "rpg_xp": 55
+  },
+  {
+    "name": "Mire Fang Spider",
+    "hp": 280,
+    "atk": 23,
+    "def": 10,
+    "crit": 10,
+    "coin_drop": [
+      93,
+      101
+    ],
+    "rpg_xp": 84
+  },
+  {
+    "name": "Salt Blight Colossus",
+    "hp": 236,
+    "atk": 24,
+    "def": 10,
+    "crit": 12,
+    "coin_drop": [
+      118,
+      133
+    ],
+    "rpg_xp": 92
+  },
+  {
+    "name": "Thunder Cinder Imp",
+    "hp": 288,
+    "atk": 25,
+    "def": 12,
+    "crit": 11,
+    "coin_drop": [
+      91,
+      115
+    ],
+    "rpg_xp": 81
+  },
+  {
+    "name": "Feral Blight Colossus",
+    "hp": 257,
+    "atk": 24,
+    "def": 10,
+    "crit": 12,
+    "coin_drop": [
+      77,
+      118
+    ],
+    "rpg_xp": 101
+  },
+  {
+    "name": "Sky Moth Queen",
+    "hp": 278,
+    "atk": 26,
+    "def": 11,
+    "crit": 11,
+    "coin_drop": [
+      114,
+      150
+    ],
+    "rpg_xp": 100
+  },
+  {
+    "name": "Salt Serpent",
+    "hp": 379,
+    "atk": 25,
+    "def": 11,
+    "crit": 10,
+    "coin_drop": [
+      119,
+      161
+    ],
+    "rpg_xp": 97
+  },
+  {
+    "name": "Lunar Wisp",
+    "hp": 295,
+    "atk": 26,
+    "def": 9,
+    "crit": 10,
+    "coin_drop": [
+      83,
+      131
+    ],
+    "rpg_xp": 118
+  },
+  {
+    "name": "Windswept Cinder Imp",
+    "hp": 257,
+    "atk": 32,
+    "def": 10,
+    "crit": 9,
+    "coin_drop": [
+      99,
+      126
+    ],
+    "rpg_xp": 108
+  },
+  {
+    "name": "Feral Serpent",
+    "hp": 363,
+    "atk": 30,
+    "def": 11,
+    "crit": 12,
+    "coin_drop": [
+      113,
+      129
+    ],
+    "rpg_xp": 112
+  },
+  {
+    "name": "Umbral Moon Hare",
+    "hp": 278,
+    "atk": 24,
+    "def": 12,
+    "crit": 9,
+    "coin_drop": [
+      91,
+      136
+    ],
+    "rpg_xp": 110
+  },
+  {
+    "name": "Gravel Aether Wyvern",
+    "hp": 223,
+    "atk": 29,
+    "def": 11,
+    "crit": 12,
+    "coin_drop": [
+      78,
+      92
+    ],
+    "rpg_xp": 101
+  },
+  {
+    "name": "Mist Oni Bruiser",
+    "hp": 364,
+    "atk": 30,
+    "def": 11,
+    "crit": 11,
+    "coin_drop": [
+      87,
+      127
+    ],
+    "rpg_xp": 83
+  },
+  {
+    "name": "Silver Bandit",
+    "hp": 361,
+    "atk": 34,
+    "def": 12,
+    "crit": 10,
+    "coin_drop": [
+      114,
+      160
+    ],
+    "rpg_xp": 105
+  },
+  {
+    "name": "Mist Fang Spider",
+    "hp": 260,
+    "atk": 23,
+    "def": 11,
+    "crit": 12,
+    "coin_drop": [
+      100,
+      143
+    ],
+    "rpg_xp": 94
+  },
+  {
+    "name": "Storm Prowler",
+    "hp": 244,
+    "atk": 29,
+    "def": 10,
+    "crit": 8,
+    "coin_drop": [
+      77,
+      127
+    ],
+    "rpg_xp": 127
+  },
+  {
+    "name": "Windswept Prowler",
+    "hp": 298,
+    "atk": 30,
+    "def": 9,
+    "crit": 10,
+    "coin_drop": [
+      106,
+      119
+    ],
+    "rpg_xp": 128
+  },
+  {
+    "name": "Verdant Grove Titan",
+    "hp": 315,
+    "atk": 28,
+    "def": 11,
+    "crit": 12,
+    "coin_drop": [
+      108,
+      120
+    ],
+    "rpg_xp": 101
+  },
+  {
+    "name": "Silver Serpent",
+    "hp": 294,
+    "atk": 22,
+    "def": 10,
+    "crit": 10,
+    "coin_drop": [
+      103,
+      131
+    ],
+    "rpg_xp": 111
+  },
+  {
+    "name": "Gravel Thunder Yak",
+    "hp": 221,
+    "atk": 33,
+    "def": 8,
+    "crit": 10,
+    "coin_drop": [
+      118,
+      156
+    ],
+    "rpg_xp": 83
+  },
+  {
+    "name": "Windswept Oni Bruiser",
+    "hp": 340,
+    "atk": 22,
+    "def": 11,
+    "crit": 10,
+    "coin_drop": [
+      120,
+      169
+    ],
+    "rpg_xp": 126
+  },
+  {
+    "name": "Shattered Fang Spider",
+    "hp": 485,
+    "atk": 34,
+    "def": 17,
+    "crit": 14,
+    "coin_drop": [
+      208,
+      217
+    ],
+    "rpg_xp": 208
+  },
+  {
+    "name": "Salt Fog Djinn",
+    "hp": 396,
+    "atk": 44,
+    "def": 15,
+    "crit": 14,
+    "coin_drop": [
+      139,
+      234
+    ],
+    "rpg_xp": 155
+  },
+  {
+    "name": "Sable Bone Drake",
+    "hp": 427,
+    "atk": 42,
+    "def": 15,
+    "crit": 10,
+    "coin_drop": [
+      201,
+      262
+    ],
+    "rpg_xp": 140
+  },
+  {
+    "name": "Whisper Banshee",
+    "hp": 562,
+    "atk": 43,
+    "def": 17,
+    "crit": 10,
+    "coin_drop": [
+      142,
+      213
+    ],
+    "rpg_xp": 197
+  },
+  {
+    "name": "Thunder Mire Hydra",
+    "hp": 522,
+    "atk": 46,
+    "def": 13,
+    "crit": 13,
+    "coin_drop": [
+      214,
+      242
+    ],
+    "rpg_xp": 173
+  },
+  {
+    "name": "Frost Mire Hydra",
+    "hp": 498,
+    "atk": 37,
+    "def": 18,
+    "crit": 10,
+    "coin_drop": [
+      136,
+      203
+    ],
+    "rpg_xp": 181
+  },
+  {
+    "name": "Duskwalker Cinder Imp",
+    "hp": 596,
+    "atk": 42,
+    "def": 17,
+    "crit": 10,
+    "coin_drop": [
+      128,
+      158
+    ],
+    "rpg_xp": 220
+  },
+  {
+    "name": "Gloom Banshee",
+    "hp": 545,
+    "atk": 45,
+    "def": 16,
+    "crit": 13,
+    "coin_drop": [
+      131,
+      182
+    ],
+    "rpg_xp": 174
+  },
+  {
+    "name": "Shade Tengu Duelist",
+    "hp": 482,
+    "atk": 44,
+    "def": 16,
+    "crit": 13,
+    "coin_drop": [
+      198,
+      208
+    ],
+    "rpg_xp": 178
+  },
+  {
+    "name": "Whisper Thunder Yak",
+    "hp": 494,
+    "atk": 44,
+    "def": 16,
+    "crit": 12,
+    "coin_drop": [
+      161,
+      261
+    ],
+    "rpg_xp": 202
+  },
+  {
+    "name": "River Serpent",
+    "hp": 642,
+    "atk": 37,
+    "def": 18,
+    "crit": 12,
+    "coin_drop": [
+      120,
+      133
+    ],
+    "rpg_xp": 165
+  },
+  {
+    "name": "Storm Fog Djinn",
+    "hp": 460,
+    "atk": 41,
+    "def": 16,
+    "crit": 10,
+    "coin_drop": [
+      159,
+      236
+    ],
+    "rpg_xp": 178
+  },
+  {
+    "name": "Quartz Raiju",
+    "hp": 382,
+    "atk": 46,
+    "def": 15,
+    "crit": 10,
+    "coin_drop": [
+      192,
+      263
+    ],
+    "rpg_xp": 189
+  },
+  {
+    "name": "Storm Rootcaller",
+    "hp": 397,
+    "atk": 34,
+    "def": 15,
+    "crit": 14,
+    "coin_drop": [
+      139,
+      147
+    ],
+    "rpg_xp": 161
+  },
+  {
+    "name": "Gravel Bandit",
+    "hp": 648,
+    "atk": 35,
+    "def": 13,
+    "crit": 13,
+    "coin_drop": [
+      129,
+      205
+    ],
+    "rpg_xp": 197
+  },
+  {
+    "name": "Moonlit Slime",
+    "hp": 815,
+    "atk": 58,
+    "def": 18,
+    "crit": 16,
+    "coin_drop": [
+      283,
+      310
+    ],
+    "rpg_xp": 227
+  },
+  {
+    "name": "Golden Fang Spider",
+    "hp": 816,
+    "atk": 53,
+    "def": 20,
+    "crit": 15,
+    "coin_drop": [
+      240,
+      275
+    ],
+    "rpg_xp": 275
+  },
+  {
+    "name": "Frost Blight Colossus",
+    "hp": 888,
+    "atk": 56,
+    "def": 21,
+    "crit": 16,
+    "coin_drop": [
+      288,
+      352
+    ],
+    "rpg_xp": 251
+  },
+  {
+    "name": "Shade Banshee",
+    "hp": 656,
+    "atk": 55,
+    "def": 18,
+    "crit": 14,
+    "coin_drop": [
+      222,
+      346
+    ],
+    "rpg_xp": 294
+  },
+  {
+    "name": "Elder Vine Horror",
+    "hp": 726,
+    "atk": 52,
+    "def": 22,
+    "crit": 12,
+    "coin_drop": [
+      278,
+      321
+    ],
+    "rpg_xp": 310
+  },
+  {
+    "name": "Howling Bandit",
+    "hp": 719,
+    "atk": 49,
+    "def": 18,
+    "crit": 16,
+    "coin_drop": [
+      306,
+      351
+    ],
+    "rpg_xp": 258
+  },
+  {
+    "name": "Wild Kappa",
+    "hp": 755,
+    "atk": 61,
+    "def": 18,
+    "crit": 12,
+    "coin_drop": [
+      270,
+      332
+    ],
+    "rpg_xp": 276
+  },
+  {
+    "name": "Shattered Shrine Guardian",
+    "hp": 739,
+    "atk": 51,
+    "def": 19,
+    "crit": 13,
+    "coin_drop": [
+      263,
+      271
+    ],
+    "rpg_xp": 269
+  },
+  {
+    "name": "Storm Carp Spirit",
+    "hp": 765,
+    "atk": 52,
+    "def": 18,
+    "crit": 14,
+    "coin_drop": [
+      240,
+      290
+    ],
+    "rpg_xp": 234
+  },
+  {
+    "name": "Sky Kappa",
+    "hp": 761,
+    "atk": 57,
+    "def": 22,
+    "crit": 13,
+    "coin_drop": [
+      288,
+      321
+    ],
+    "rpg_xp": 310
+  }
+]

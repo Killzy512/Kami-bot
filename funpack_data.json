@@ -1,0 +1,127 @@
+{
+  "trivia_bank": [
+    {
+      "q": "What does HTTP stand for?",
+      "choices": [
+        "HyperText Transfer Protocol",
+        "High Transfer Text Protocol",
+        "HyperText Transit Pipeline",
+        "Host Transfer Type Protocol"
+      ],
+      "correct_index": 0
+    },
+    {
+      "q": "Which keyword creates a function in Python?",
+      "choices": [
+        "func",
+        "def",
+        "lambda",
+        "fn"
+      ],
+      "correct_index": 1
+    },
+    {
+      "q": "Which planet is known as the Red Planet?",
+      "choices": [
+        "Venus",
+        "Mars",
+        "Jupiter",
+        "Mercury"
+      ],
+      "correct_index": 1
+    },
+    {
+      "q": "Which Big‑O is best (fastest)?",
+      "choices": [
+        "O(n^2)",
+        "O(n log n)",
+        "O(1)",
+        "O(n^3)"
+      ],
+      "correct_index": 2
+    },
+    {
+      "q": "Discord was first released in which year?",
+      "choices": [
+        "2013",
+        "2015",
+        "2017",
+        "2019"
+      ],
+      "correct_index": 1
+    }
+  ],
+  "trivia_target": {
+    "636607166911873028": 1403719962820083712
+  },
+  "trivia_hours": {},
+  "trivia_today": {
+    "636607166911873028": {
+      "date": "2025-08-12",
+      "hours_posted": [
+        10,
+        14
+      ]
+    }
+  },
+  "trivia_scores": {
+    "636607166911873028": {
+      "week_id": "2025-W33",
+      "users": {
+        "452226391224877057": 250
+      }
+    }
+  },
+  "trivia_role": {},
+  "trivia_weekly_done": {
+    "636607166911873028": "2025-08-10"
+  },
+  "wyr_bank": [
+    {
+      "a": "Have the ability to fly",
+      "b": "Be invisible"
+    },
+    {
+      "a": "Only use a flip phone",
+      "b": "Only use dial‑up internet"
+    },
+    {
+      "a": "Free pizza forever",
+      "b": "Free tacos forever"
+    }
+  ],
+  "wyr_target": {
+    "636607166911873028": 1403719962820083712
+  },
+  "wyr_hours": {},
+  "wyr_today": {
+    "636607166911873028": {
+      "date": "2025-08-12",
+      "hours_posted": [
+        12
+      ]
+    }
+  },
+  "active_trivia": {
+    "1404972200821260360": {
+      "guild_id": 636607166911873028,
+      "channel_id": 1403719962820083712,
+      "q": "Which Big‑O is best (fastest)?",
+      "choices": [
+        "O(n^2)",
+        "O(n log n)",
+        "O(1)",
+        "O(n^3)"
+      ],
+      "correct": 2,
+      "winners": [
+        452226391224877057
+      ],
+      "answered": [
+        452226391224877057
+      ],
+      "created_ts": 1755041876,
+      "auto": false
+    }
+  }
+}

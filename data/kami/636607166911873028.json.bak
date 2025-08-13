@@ -1,0 +1,45 @@
+{
+  "players": {
+    "452226391224877057": {
+      "name": "ItzKillzy",
+      "rpg_xp": 60,
+      "rpg_level": 2,
+      "hp": 50,
+      "max_hp": 55,
+      "atk": 6,
+      "def": 2,
+      "crit": 5,
+      "weapon": null,
+      "armor": null,
+      "inventory": [],
+      "last_explore": 0,
+      "clan": null
+    }
+  },
+  "fallback_balances": {},
+  "shop_seed": 1501,
+  "clans": {},
+  "market": {
+    "next_id": 1,
+    "listings": {}
+  },
+  "leaderboard": {
+    "users": {}
+  },
+  "leaderboard_season": {
+    "season": "2025Q3",
+    "users": {}
+  },
+  "raid_keys": {},
+  "weekly_lockouts": {},
+  "daily": {},
+  "adventure": {
+    "channel_id": 1403719962820083712,
+    "spawn": {
+      "enabled": true,
+      "min": 600,
+      "max": 1800
+    },
+    "next_spawn_ts": 1754921695
+  }
+}
